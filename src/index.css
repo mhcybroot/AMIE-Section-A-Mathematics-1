@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+body {
+  background-color: #030712;
+  color: #f8fafc;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-image: radial-gradient(circle at 50% 0%, rgba(124, 58, 237, 0.12), transparent 45%),
+                    radial-gradient(circle at 100% 50%, rgba(56, 189, 248, 0.05), transparent 30%);
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f293d;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+/* KaTeX custom sizing in dark theme */
+.katex {
+  font-size: 1.05em;
+  color: #f1f5f9;
+}
+
+.katex-display {
+  margin: 0.5em 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25em 0;
+}
